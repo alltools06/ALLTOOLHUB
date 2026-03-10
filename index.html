@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALLTOOLHUB – Free Online Tools | 120+ Tools for Images, PDFs, SEO & More</title>
+<meta name="description" content="ALLTOOLHUB offers 120+ free online tools for images, PDFs, SEO, developers, calculators, social media and more. Fast, secure and completely free.">
+<meta name="keywords" content="free online tools, image tools, PDF tools, SEO tools, developer tools, calculator tools">
+<meta property="og:title" content="ALLTOOLHUB – Free Online Tools Platform">
+<meta property="og:description" content="120+ powerful free online tools for images, PDFs, SEO, developers, social media and more.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://alltoolhub.com">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ALLTOOLHUB","url":"https://alltoolhub.com","description":"120+ Free Online Tools","potentialAction":{"@type":"SearchAction","target":"https://alltoolhub.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f8f7f4;
+  --bg2: #ffffff;
+  --bg3: #f0ede8;
+  --surface: #ffffff;
+  --border: #e8e4de;
+  --text: #1a1714;
+  --text2: #5c5750;
+  --text3: #8a847c;
+  --accent: #ff4d1c;
+  --accent2: #ff7a50;
+  --accent-bg: #fff2ee;
+  --blue: #2563eb;
+  --green: #16a34a;
+  --purple: #7c3aed;
+  --yellow: #d97706;
+  --teal: #0891b2;
+  --pink: #db2777;
+  --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+  --radius: 14px;
+  --radius-sm: 8px;
+}
+[data-theme="dark"] {
+  --bg: #0f0e0d;
+  --bg2: #1a1916;
+  --bg3: #242220;
+  --surface: #1e1d1b;
+  --border: #2e2c29;
+  --text: #f0ede8;
+  --text2: #b5b0a8;
+  --text3: #6e6860;
+  --accent: #ff6640;
+  --accent2: #ff8c6a;
+  --accent-bg: #2a1a14;
+  --shadow: 0 2px 12px rgba(0,0,0,0.3);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background .3s,color .3s;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+button{cursor:pointer;font-family:inherit}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:1000;background:var(--bg2);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.header-inner{max-width:1400px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;gap:20px}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.35rem;color:var(--text);white-space:nowrap;display:flex;align-items:center;gap:8px}
+.logo span{color:var(--accent)}
+.logo-icon{width:32px;height:32px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:800}
+nav{display:flex;align-items:center;gap:2px;flex:1;justify-content:center}
+nav a{font-size:.875rem;font-weight:500;color:var(--text2);padding:6px 12px;border-radius:var(--radius-sm);transition:all .2s;white-space:nowrap}
+nav a:hover{color:var(--text);background:var(--bg3)}
+.header-right{display:flex;align-items:center;gap:10px}
+.search-wrap{position:relative}
+.search-wrap input{background:var(--bg3);border:1px solid var(--border);border-radius:24px;padding:8px 16px 8px 36px;font-size:.875rem;color:var(--text);width:200px;outline:none;transition:all .3s;font-family:inherit}
+.search-wrap input:focus{width:260px;border-color:var(--accent);background:var(--surface)}
+.search-wrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text3);width:14px;height:14px}
+.btn{padding:8px 18px;border-radius:24px;font-size:.875rem;font-weight:600;border:none;transition:all .2s;cursor:pointer}
+.btn-outline{background:transparent;border:1.5px solid var(--border);color:var(--text2)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-1px)}
+.dark-toggle{background:var(--bg3);border:1px solid var(--border);color:var(--text2);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:all .2s}
+.dark-toggle:hover{color:var(--accent);border-color:var(--accent)}
+
+/* HERO */
+.hero{background:var(--bg2);padding:80px 24px 60px;text-align:center;position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(255,77,28,0.08) 0%,transparent 70%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--accent-bg);color:var(--accent);border:1px solid rgba(255,77,28,0.2);border-radius:24px;padding:5px 14px;font-size:.8rem;font-weight:600;margin-bottom:20px;animation:fadeDown .6s ease both}
+.hero h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3.5rem);line-height:1.15;margin-bottom:16px;animation:fadeUp .7s ease both .1s}
+.hero h1 span{color:var(--accent)}
+.hero p{color:var(--text2);font-size:1.1rem;max-width:600px;margin:0 auto 32px;animation:fadeUp .7s ease both .2s}
+.hero-features{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:36px;animation:fadeUp .7s ease both .25s}
+.hero-feature{display:flex;align-items:center;gap:6px;font-size:.875rem;color:var(--text2);font-weight:500}
+.hero-feature span{color:var(--accent);font-size:1rem}
+.hero-search{max-width:580px;margin:0 auto 28px;position:relative;animation:fadeUp .7s ease both .3s}
+.hero-search input{width:100%;padding:16px 24px 16px 50px;border-radius:50px;border:2px solid var(--border);background:var(--surface);font-size:1rem;color:var(--text);outline:none;box-shadow:var(--shadow-lg);transition:border-color .3s;font-family:inherit}
+.hero-search input:focus{border-color:var(--accent)}
+.hero-search svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--text3);width:20px;height:20px}
+.hero-search-btn{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:var(--accent);color:#fff;border:none;border-radius:40px;padding:10px 22px;font-weight:600;font-size:.9rem;font-family:inherit;transition:all .2s}
+.hero-search-btn:hover{background:var(--accent2)}
+.hero-btns{display:flex;justify-content:center;gap:12px;animation:fadeUp .7s ease both .35s}
+.hero-btns .btn{padding:12px 28px;font-size:1rem}
+.stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:48px;padding-top:40px;border-top:1px solid var(--border);animation:fadeUp .7s ease both .4s}
+.stat{text-align:center}
+.stat-num{font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;color:var(--text)}
+.stat-num span{color:var(--accent)}
+.stat-label{font-size:.8rem;color:var(--text3);margin-top:2px}
+
+/* SECTIONS */
+section{padding:60px 24px}
+.section-inner{max-width:1400px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:40px}
+.section-label{font-size:.8rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+.section-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--text);margin-bottom:10px}
+.section-sub{color:var(--text2);font-size:1rem;max-width:500px;margin:0 auto}
+
+/* CATEGORIES STRIP */
+.cats-strip{background:var(--bg3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:16px 24px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.cats-inner{max-width:1400px;margin:0 auto;display:flex;gap:8px;width:max-content}
+.cat-chip{display:flex;align-items:center;gap:6px;padding:8px 16px;border-radius:24px;border:1.5px solid var(--border);background:var(--surface);font-size:.85rem;font-weight:500;color:var(--text2);cursor:pointer;transition:all .2s;white-space:nowrap}
+.cat-chip:hover,.cat-chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.cat-chip .cat-icon{font-size:1rem}
+
+/* TOOL CARDS GRID */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.tool-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:10px;transition:all .25s;cursor:pointer;position:relative;overflow:visible}
+.tool-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--accent));transform:scaleX(0);transform-origin:left;transition:transform .3s;border-radius:var(--radius) var(--radius) 0 0}
+.tool-card:hover{transform:translateY(-3px);border-color:var(--card-accent,var(--accent));box-shadow:var(--shadow-lg)}
+.tool-card:hover::before{transform:scaleX(1)}
+.tool-icon{width:52px;height:52px;min-width:52px;border-radius:14px;background:var(--card-bg,var(--accent-bg));display:flex;align-items:center;justify-content:center;overflow:visible;flex-shrink:0;font-size:1.55rem;line-height:1}
+.tool-name{font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;color:var(--text)}
+.tool-desc{font-size:.82rem;color:var(--text3);line-height:1.5;flex:1}
+.tool-btn{display:inline-flex;align-items:center;gap:5px;font-size:.8rem;font-weight:600;color:var(--card-color,var(--accent));margin-top:4px;transition:gap .2s}
+.tool-card:hover .tool-btn{gap:8px}
+
+/* CATEGORY SECTIONS */
+.cat-section{margin-bottom:56px}
+.cat-section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:1.5px solid var(--border)}
+.cat-section-title{display:flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem}
+.cat-section-icon{width:36px;height:36px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.15rem;line-height:1;overflow:visible}
+.view-all{font-size:.85rem;font-weight:600;color:var(--accent);display:flex;align-items:center;gap:4px;transition:gap .2s}
+.view-all:hover{gap:7px}
+
+/* FEATURED */
+.featured-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.featured-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;gap:16px;align-items:flex-start;transition:all .25s;cursor:pointer}
+.featured-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.featured-icon{width:58px;height:58px;min-width:58px;border-radius:14px;display:flex;align-items:center;justify-content:center;overflow:visible;flex-shrink:0;font-size:1.8rem;line-height:1}
+.featured-info .tool-name{font-size:1rem}
+.featured-info .tool-desc{font-size:.85rem;margin-top:4px}
+.featured-info .tool-btn{margin-top:8px}
+
+/* BIG CATEGORIES GRID */
+.big-cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.big-cat{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center;cursor:pointer;transition:all .25s}
+.big-cat:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.big-cat-icon{font-size:2.2rem;margin-bottom:10px;line-height:1.2;display:block;overflow:visible}
+.big-cat-name{font-weight:700;font-size:.9rem;font-family:'Syne',sans-serif;color:var(--text)}
+.big-cat-count{font-size:.78rem;color:var(--text3);margin-top:3px}
+
+/* SEARCH OVERLAY */
+.search-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:2000;display:none;align-items:flex-start;justify-content:center;padding-top:80px;backdrop-filter:blur(4px)}
+.search-overlay.open{display:flex}
+.search-modal{background:var(--surface);border-radius:var(--radius);width:100%;max-width:640px;overflow:hidden;box-shadow:var(--shadow-lg);animation:fadeDown .3s ease}
+.search-modal-header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.search-modal-input{flex:1;border:none;background:transparent;font-size:1.1rem;color:var(--text);outline:none;font-family:inherit}
+.search-results{max-height:400px;overflow-y:auto}
+.search-result-item{display:flex;align-items:center;gap:14px;padding:12px 24px;cursor:pointer;transition:background .15s;border-bottom:1px solid var(--border)}
+.search-result-item:hover{background:var(--bg3)}
+.search-result-icon{font-size:1.2rem;width:36px;text-align:center}
+.search-result-info{flex:1}
+.search-result-name{font-weight:600;font-size:.9rem}
+.search-result-cat{font-size:.78rem;color:var(--text3)}
+.search-empty{padding:40px;text-align:center;color:var(--text3)}
+
+/* TOOL PAGE */
+.tool-page{display:none}
+.tool-page.active{display:block}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--text3);margin-bottom:24px}
+.breadcrumb a{color:var(--accent)}
+.breadcrumb span{color:var(--text3)}
+.tool-page-inner{max-width:900px;margin:0 auto;padding:40px 24px}
+.tool-page-header{margin-bottom:32px}
+.tool-page-icon{font-size:2.5rem;margin-bottom:12px}
+.tool-page-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2rem);margin-bottom:8px}
+.tool-page-desc{color:var(--text2);font-size:1rem}
+.tool-interface{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:28px}
+.tool-label{font-weight:600;font-size:.9rem;margin-bottom:8px;display:block;color:var(--text)}
+textarea,input[type=text],input[type=number],input[type=url]{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--bg3);color:var(--text);font-family:inherit;font-size:.9rem;outline:none;transition:border-color .2s;resize:vertical}
+textarea:focus,input[type=text]:focus,input[type=number]:focus,input[type=url]:focus{border-color:var(--accent);background:var(--surface)}
+textarea{min-height:140px}
+.tool-actions{margin:16px 0;display:flex;gap:10px;flex-wrap:wrap}
+.btn-tool{padding:11px 24px;border-radius:var(--radius-sm);font-weight:600;font-size:.9rem;border:none;font-family:inherit;transition:all .2s}
+.btn-tool-primary{background:var(--accent);color:#fff}
+.btn-tool-primary:hover{background:var(--accent2);transform:translateY(-1px)}
+.btn-tool-secondary{background:var(--bg3);color:var(--text);border:1.5px solid var(--border)}
+.btn-tool-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.tool-output{margin-top:20px;padding:16px;background:var(--bg3);border-radius:var(--radius-sm);border:1.5px solid var(--border);font-size:.9rem;min-height:80px;white-space:pre-wrap;word-break:break-all;font-family:monospace;color:var(--text)}
+.tool-output.success{border-color:var(--green);background:rgba(22,163,74,0.05)}
+.output-label{font-weight:600;font-size:.85rem;color:var(--text2);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.copy-btn{font-size:.78rem;color:var(--accent);cursor:pointer;font-weight:600;background:none;border:none;font-family:inherit}
+.related-tools{margin-top:40px}
+.related-title{font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:16px}
+
+/* BACK BTN */
+.back-btn{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--text2);margin-bottom:8px;cursor:pointer;transition:color .2s}
+.back-btn:hover{color:var(--accent)}
+
+/* AUTH PAGES */
+.auth-page{display:none;min-height:80vh;align-items:center;justify-content:center;padding:40px 24px}
+.auth-page.active{display:flex}
+.auth-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:36px;width:100%;max-width:420px;box-shadow:var(--shadow-lg)}
+.auth-title{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;margin-bottom:6px}
+.auth-sub{color:var(--text2);font-size:.9rem;margin-bottom:28px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-weight:600;font-size:.85rem;margin-bottom:6px;color:var(--text)}
+.form-group input{padding:11px 14px}
+.auth-btn{width:100%;padding:13px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius-sm);font-size:1rem;font-weight:700;font-family:inherit;transition:all .2s;margin-top:8px}
+.auth-btn:hover{background:var(--accent2)}
+.auth-link{text-align:center;margin-top:18px;font-size:.875rem;color:var(--text2)}
+.auth-link a{color:var(--accent);font-weight:600}
+.divider{display:flex;align-items:center;gap:12px;margin:20px 0;color:var(--text3);font-size:.8rem}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24px 24px}
+.footer-inner{max-width:1400px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-brand .logo{font-size:1.2rem;margin-bottom:12px;display:block}
+.footer-brand p{color:var(--text2);font-size:.875rem;line-height:1.7}
+.footer-col h4{font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;margin-bottom:14px;color:var(--text)}
+.footer-col a{display:block;font-size:.85rem;color:var(--text2);margin-bottom:8px;transition:color .2s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:.82rem;color:var(--text3)}
+.footer-social{display:flex;gap:10px}
+.social-btn{width:34px;height:34px;border:1.5px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--text2);transition:all .2s}
+.social-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* MAIN PAGE TOGGLE */
+#main-home,.page{transition:opacity .3s}
+.page{display:none}
+.page.active{display:block}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;right:24px;background:var(--text);color:var(--bg);padding:12px 20px;border-radius:var(--radius-sm);font-size:.875rem;font-weight:500;z-index:9999;animation:slideIn .3s ease;max-width:300px}
+.toast.hide{animation:slideOut .3s ease forwards}
+
+/* MOBILE NAV */
+.menu-btn{display:none;background:var(--bg3);border:1px solid var(--border);width:36px;height:36px;border-radius:var(--radius-sm);align-items:center;justify-content:center;font-size:1.2rem;color:var(--text)}
+.mobile-nav{display:none;position:fixed;inset:0;top:64px;background:var(--bg2);z-index:999;padding:20px 24px;flex-direction:column;gap:4px;border-top:1px solid var(--border);overflow-y:auto}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:12px 16px;border-radius:var(--radius-sm);font-weight:500;color:var(--text2);font-size:.95rem;transition:all .2s}
+.mobile-nav a:hover{background:var(--bg3);color:var(--accent)}
+
+/* HIGHLIGHT BADGE */
+.new-badge{background:var(--accent);color:#fff;font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;vertical-align:middle;margin-left:4px}
+.popular-badge{background:var(--green);color:#fff;font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;vertical-align:middle;margin-left:4px}
+
+/* SELECT */
+select{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:var(--radius-sm);background:var(--bg3);color:var(--text);font-family:inherit;font-size:.9rem;outline:none;cursor:pointer}
+select:focus{border-color:var(--accent)}
+
+/* RANGE */
+input[type=range]{width:100%;accent-color:var(--accent)}
+
+/* FILE INPUT */
+.file-drop{border:2px dashed var(--border);border-radius:var(--radius);padding:40px 20px;text-align:center;cursor:pointer;transition:all .2s;background:var(--bg3)}
+.file-drop:hover,.file-drop.drag-over{border-color:var(--accent);background:var(--accent-bg)}
+.file-drop-icon{font-size:2rem;margin-bottom:8px}
+.file-drop-text{font-weight:600;font-size:.95rem;color:var(--text);margin-bottom:4px}
+.file-drop-sub{font-size:.82rem;color:var(--text3)}
+
+/* INFO BOX */
+.info-box{background:var(--bg3);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;font-size:.85rem;color:var(--text2);margin-top:16px}
+.info-box strong{color:var(--text)}
+
+/* RESULT BOX */
+.result-box{padding:20px;background:var(--accent-bg);border:1.5px solid rgba(255,77,28,.2);border-radius:var(--radius-sm);text-align:center}
+.result-value{font-family:'Syne',sans-serif;font-weight:800;font-size:2rem;color:var(--accent)}
+.result-label{font-size:.85rem;color:var(--text2);margin-top:4px}
+
+/* ANIMATIONS */
+@keyframes fadeDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideOut{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(20px)}}
+
+/* SCROLL ANIMATE */
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr};nav{display:none}.menu-btn{display:flex}}
+@media(max-width:768px){.hero h1{font-size:1.8rem}.hero-features{gap:12px}.stats{gap:24px}.header-right .btn{display:none}.search-wrap{display:none}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}
+@media(max-width:480px){.tools-grid{grid-template-columns:1fr 1fr}.big-cats{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="logo" onclick="showPage('home')" style="cursor:pointer">
+      <div class="logo-icon">AT</div>
+      ALL<span>TOOL</span>HUB
+    </div>
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('all-tools')">All Tools</a>
+      <a href="#" onclick="filterCat('image')">Image</a>
+      <a href="#" onclick="filterCat('pdf')">PDF</a>
+      <a href="#" onclick="filterCat('seo')">SEO</a>
+      <a href="#" onclick="filterCat('developer')">Developer</a>
+      <a href="#" onclick="filterCat('calculator')">Calculator</a>
+      <a href="#" onclick="filterCat('misc')">More</a>
+    </nav>
+    <div class="header-right">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Search tools..." onfocus="openSearch()" readonly>
+      </div>
+      <button class="btn btn-outline" onclick="showPage('login')">Login</button>
+      <button class="btn btn-primary" onclick="showPage('signup')">Sign Up</button>
+      <button class="dark-toggle" onclick="toggleDark()" title="Toggle dark mode">🌙</button>
+      <button class="menu-btn" onclick="toggleMobileNav()">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#" onclick="showPage('home');toggleMobileNav()">🏠 Home</a>
+  <a href="#" onclick="showPage('all-tools');toggleMobileNav()">🔧 All Tools</a>
+  <a href="#" onclick="filterCat('image');toggleMobileNav()">🖼️ Image Tools</a>
+  <a href="#" onclick="filterCat('pdf');toggleMobileNav()">📄 PDF Tools</a>
+  <a href="#" onclick="filterCat('seo');toggleMobileNav()">🔍 SEO Tools</a>
+  <a href="#" onclick="filterCat('developer');toggleMobileNav()">💻 Developer Tools</a>
+  <a href="#" onclick="filterCat('calculator');toggleMobileNav()">📊 Calculator Tools</a>
+  <a href="#" onclick="showPage('login');toggleMobileNav()">🔑 Login</a>
+  <a href="#" onclick="showPage('signup');toggleMobileNav()">✨ Sign Up</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay" onclick="closeSearchIfOutside(event)">
+  <div class="search-modal">
+    <div class="search-modal-header">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;color:var(--text3)"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input class="search-modal-input" type="text" placeholder="Search 120+ tools..." id="searchInput" oninput="doSearch(this.value)" autofocus>
+      <button onclick="closeSearch()" style="background:none;border:none;font-size:1.2rem;color:var(--text3);cursor:pointer">✕</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- HOME PAGE -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">✨ 120+ Free Tools Available</div>
+    <h1>ALLTOOLHUB<br><span>Free Online Tools</span> Platform</h1>
+    <p>Use over 120 powerful online tools for images, PDFs, SEO, developers, social media and more. Fast, secure and completely free.</p>
+    <div class="hero-features">
+      <div class="hero-feature"><span>⚡</span> 120+ Free Tools</div>
+      <div class="hero-feature"><span>🚀</span> No Installation</div>
+      <div class="hero-feature"><span>📱</span> Mobile Friendly</div>
+      <div class="hero-feature"><span>🔒</span> Secure & Fast</div>
+    </div>
+    <div class="hero-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search any tool... e.g. 'Image Compressor', 'PDF Merger'" onfocus="openSearch()">
+      <button class="hero-search-btn" onclick="openSearch()">Search</button>
+    </div>
+    <div class="hero-btns">
+      <button class="btn btn-primary" onclick="showPage('all-tools')">🔧 Explore All Tools</button>
+      <button class="btn btn-outline" onclick="document.getElementById('featured').scrollIntoView({behavior:'smooth'})">⭐ Popular Tools</button>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-num">120<span>+</span></div><div class="stat-label">Free Tools</div></div>
+      <div class="stat"><div class="stat-num">11<span>+</span></div><div class="stat-label">Categories</div></div>
+      <div class="stat"><div class="stat-num">0</div><div class="stat-label">Installation Needed</div></div>
+      <div class="stat"><div class="stat-num">100<span>%</span></div><div class="stat-label">Free Forever</div></div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES STRIP -->
+  <div class="cats-strip">
+    <div class="cats-inner">
+      <div class="cat-chip active" onclick="filterCat('all')"><span class="cat-icon">🔧</span>All Tools</div>
+      <div class="cat-chip" onclick="filterCat('image')"><span class="cat-icon">🖼️</span>Image Tools</div>
+      <div class="cat-chip" onclick="filterCat('pdf')"><span class="cat-icon">📄</span>PDF Tools</div>
+      <div class="cat-chip" onclick="filterCat('text')"><span class="cat-icon">📝</span>Text Tools</div>
+      <div class="cat-chip" onclick="filterCat('developer')"><span class="cat-icon">💻</span>Developer Tools</div>
+      <div class="cat-chip" onclick="filterCat('seo')"><span class="cat-icon">🔍</span>SEO Tools</div>
+      <div class="cat-chip" onclick="filterCat('website')"><span class="cat-icon">🌐</span>Website Tools</div>
+      <div class="cat-chip" onclick="filterCat('calculator')"><span class="cat-icon">📊</span>Calculator Tools</div>
+      <div class="cat-chip" onclick="filterCat('social')"><span class="cat-icon">📱</span>Social Media</div>
+      <div class="cat-chip" onclick="filterCat('file')"><span class="cat-icon">📁</span>File Tools</div>
+      <div class="cat-chip" onclick="filterCat('misc')"><span class="cat-icon">🎯</span>Misc Tools</div>
+      <div class="cat-chip" onclick="filterCat('advanced')"><span class="cat-icon">🤖</span>Advanced Tools</div>
+    </div>
+  </div>
+
+  <!-- FEATURED TOOLS -->
+  <section id="featured" style="background:var(--bg)">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <div class="section-label">Most Popular</div>
+        <div class="section-title">Featured Tools</div>
+        <div class="section-sub">The most-used tools trusted by millions of users worldwide</div>
+      </div>
+      <div class="featured-grid fade-in" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES OVERVIEW -->
+  <section style="background:var(--bg3)">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <div class="section-label">Browse by Category</div>
+        <div class="section-title">All Categories</div>
+        <div class="section-sub">11 categories with 120+ tools to cover all your needs</div>
+      </div>
+      <div class="big-cats fade-in" id="bigCats"></div>
+    </div>
+  </section>
+
+  <!-- ALL CATEGORY SECTIONS -->
+  <section style="background:var(--bg)">
+    <div class="section-inner" id="allCatSections"></div>
+  </section>
+
+</div>
+
+<!-- ALL TOOLS PAGE -->
+<div id="page-all-tools" class="page">
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Complete List</div>
+        <div class="section-title">All 120+ Tools</div>
+        <div class="section-sub">Browse every tool we offer — use the filter to narrow down</div>
+      </div>
+      <div class="cats-strip" style="margin:-12px -24px 28px;border-radius:0">
+        <div class="cats-inner">
+          <div class="cat-chip active" onclick="filterAllPage('all',this)">All</div>
+          <div class="cat-chip" onclick="filterAllPage('image',this)">🖼️ Image</div>
+          <div class="cat-chip" onclick="filterAllPage('pdf',this)">📄 PDF</div>
+          <div class="cat-chip" onclick="filterAllPage('text',this)">📝 Text</div>
+          <div class="cat-chip" onclick="filterAllPage('developer',this)">💻 Developer</div>
+          <div class="cat-chip" onclick="filterAllPage('seo',this)">🔍 SEO</div>
+          <div class="cat-chip" onclick="filterAllPage('website',this)">🌐 Website</div>
+          <div class="cat-chip" onclick="filterAllPage('calculator',this)">📊 Calculator</div>
+          <div class="cat-chip" onclick="filterAllPage('social',this)">📱 Social</div>
+          <div class="cat-chip" onclick="filterAllPage('file',this)">📁 File</div>
+          <div class="cat-chip" onclick="filterAllPage('misc',this)">🎯 Misc</div>
+          <div class="cat-chip" onclick="filterAllPage('advanced',this)">🤖 Advanced</div>
+        </div>
+      </div>
+      <div class="tools-grid" id="allToolsGrid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- TOOL PAGE -->
+<div id="page-tool" class="page">
+  <div class="tool-page-inner" id="toolPageContent"></div>
+</div>
+
+<!-- LOGIN PAGE -->
+<div id="page-login" class="page">
+  <div class="auth-page active">
+    <div class="auth-card">
+      <div class="auth-title">Welcome Back 👋</div>
+      <div class="auth-sub">Login to your ALLTOOLHUB account</div>
+      <div class="form-group"><label>Email Address</label><input type="text" placeholder="you@example.com"></div>
+      <div class="form-group"><label>Password</label><input type="text" placeholder="••••••••" style="-webkit-text-security:disc"></div>
+      <button class="auth-btn" onclick="showToast('Login feature coming soon!')">Login to Account</button>
+      <div class="divider">or continue with</div>
+      <button class="auth-btn" style="background:var(--bg3);color:var(--text);border:1.5px solid var(--border)" onclick="showToast('Google login coming soon!')">🔵 Continue with Google</button>
+      <div class="auth-link">Don't have an account? <a href="#" onclick="showPage('signup')">Sign Up Free</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- SIGNUP PAGE -->
+<div id="page-signup" class="page">
+  <div class="auth-page active">
+    <div class="auth-card">
+      <div class="auth-title">Create Account ✨</div>
+      <div class="auth-sub">Join ALLTOOLHUB – 100% Free Forever</div>
+      <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your Name"></div>
+      <div class="form-group"><label>Email Address</label><input type="text" placeholder="you@example.com"></div>
+      <div class="form-group"><label>Password</label><input type="text" placeholder="Create a strong password" style="-webkit-text-security:disc"></div>
+      <button class="auth-btn" onclick="showToast('Sign up feature coming soon!')">Create Free Account</button>
+      <div class="divider">or</div>
+      <button class="auth-btn" style="background:var(--bg3);color:var(--text);border:1.5px solid var(--border)" onclick="showToast('Google signup coming soon!')">🔵 Sign Up with Google</button>
+      <div class="auth-link">Already have an account? <a href="#" onclick="showPage('login')">Login</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-icon">AT</span>ALL<span style="color:var(--accent)">TOOL</span>HUB</span>
+        <p>Your all-in-one free online tools platform. 120+ tools for images, PDFs, SEO, developers, calculators and more. Fast, secure and completely free.</p>
+        <div class="footer-social" style="margin-top:16px">
+          <a class="social-btn" title="Twitter">𝕏</a>
+          <a class="social-btn" title="Facebook">f</a>
+          <a class="social-btn" title="Instagram">📷</a>
+          <a class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Top Tools</h4>
+        <a href="#" onclick="openTool('image-compressor')">Image Compressor</a>
+        <a href="#" onclick="openTool('pdf-to-word')">PDF to Word</a>
+        <a href="#" onclick="openTool('word-counter')">Word Counter</a>
+        <a href="#" onclick="openTool('qr-code-generator')">QR Code Generator</a>
+        <a href="#" onclick="openTool('password-generator')">Password Generator</a>
+        <a href="#" onclick="openTool('json-formatter')">JSON Formatter</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="#" onclick="filterCat('image')">Image Tools</a>
+        <a href="#" onclick="filterCat('pdf')">PDF Tools</a>
+        <a href="#" onclick="filterCat('developer')">Developer Tools</a>
+        <a href="#" onclick="filterCat('seo')">SEO Tools</a>
+        <a href="#" onclick="filterCat('calculator')">Calculator Tools</a>
+        <a href="#" onclick="filterCat('social')">Social Media Tools</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Partners</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 ALLTOOLHUB – All Rights Reserved. Made with ❤️ for the web.</div>
+      <div style="font-size:.82rem;color:var(--text3)">Free Online Tools | No Sign Up Required | Works on All Devices</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ============================================================
+// SVG ICON LIBRARY
+// ============================================================
+const ICONS = {
+  compress: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/><path d="m9 9 6 6M15 9l-6 6"/></svg>`,
+  resize: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>`,
+  convert: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16V4m0 0L3 8m4-4 4 4M17 8v12m0 0 4-4m-4 4-4-4"/></svg>`,
+  crop: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2v14a2 2 0 0 0 2 2h14M2 6h14a2 2 0 0 0 2-2V2"/></svg>`,
+  rotate: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>`,
+  code: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+  image: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>`,
+  watermark: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 17 10 11l3 6 2-3 3 3"/></svg>`,
+  palette: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>`,
+  blur: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`,
+  sparkle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>`,
+  pdf: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6M9 11h6M9 7h2"/></svg>`,
+  file: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`,
+  merge: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 6 4-4 4 4M12 2v10.3M8 18l4 4 4-4M12 21.7V12"/><path d="M3 12h4M17 12h4"/></svg>`,
+  split: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M8 3H3v5M21 3l-7 7M3 3l7 7M16 21h5v-5M8 21H3v-5M21 21l-7-7M3 21l7-7"/></svg>`,
+  trash: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6M10 11v6M14 11v6M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>`,
+  lock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
+  unlock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>`,
+  table: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>`,
+  hash: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>`,
+  type: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>`,
+  volume: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`,
+  mic: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>`,
+  sort: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>`,
+  shuffle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>`,
+  shield: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+  json: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-3a2 2 0 0 0-2 2v9M10 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3"/><path d="M14 13h2M14 17h2"/></svg>`,
+  globe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+  zap: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+  link: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`,
+  search: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`,
+  tag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>`,
+  robot: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 2a3 3 0 0 1 3 3v6H9V5a3 3 0 0 1 3-3z"/><path d="M8 21v-2M16 21v-2M9 14h1M14 14h1"/></svg>`,
+  map: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>`,
+  check: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>`,
+  trending: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>`,
+  speed: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 1-10 10h0"/><path d="M12 12 9 9M12 2v4"/></svg>`,
+  camera: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>`,
+  wifi: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>`,
+  dns: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="4" rx="1"/><rect x="2" y="10" width="20" height="4" rx="1"/><rect x="2" y="17" width="20" height="4" rx="1"/><circle cx="6" cy="5" r="1" fill="currentColor" stroke="none"/><circle cx="6" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="6" cy="19" r="1" fill="currentColor" stroke="none"/></svg>`,
+  pin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+  building: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22V12h6v10M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"/></svg>`,
+  phone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>`,
+  percent: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>`,
+  cake: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><line x1="2" y1="21" x2="22" y2="21"/><path d="M7 8v3M12 8v3M17 8v3M7 5a1 1 0 0 0 1-1V3M12 5a1 1 0 0 0 1-1V3M17 5a1 1 0 0 0 1-1V3"/></svg>`,
+  weight: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"/><path d="M6.5 8a2 2 0 0 0-1.905 1.46L2.1 18.5A2 2 0 0 0 4 21h16a2 2 0 0 0 1.925-2.54L19.4 9.5A2 2 0 0 0 17.5 8z"/></svg>`,
+  money: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>`,
+  receipt: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/></svg>`,
+  discount: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>`,
+  clock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+  calendar: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`,
+  binary: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M18 4v2M12 20v-6M12 10V4M6 20v-2M6 14v-4"/></svg>`,
+  words: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M9 13h6M9 17h3M14 2v6h6"/></svg>`,
+  youtube: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>`,
+  instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>`,
+  music: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`,
+  twitter: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>`,
+  facebook: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>`,
+  hashtag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>`,
+  id: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 3h-3a2 2 0 0 0-2 2v2M6 3h.01"/></svg>`,
+  archive: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/></svg>`,
+  film: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>`,
+  headphones: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>`,
+  scissors: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>`,
+  key: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21 2-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>`,
+  qr: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM17 14h3M17 17v3M14 20h3"/></svg>`,
+  barcode: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5v14M7 5v14M11 5v14M15 5v10M19 5v14M23 5v10M15 19h8"/></svg>`,
+  uuid: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="8" rx="2"/><path d="M7 12h.01M12 12h.01M17 12h.01"/></svg>`,
+  dice: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2" ry="2"/><path d="M16 8h.01M12 12h.01M8 16h.01M8 8h.01M16 16h.01"/></svg>`,
+  users: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  gradient: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="currentColor" stop-opacity="1"/><stop offset="100%" stop-color="currentColor" stop-opacity="0.1"/></linearGradient></defs><rect x="3" y="3" width="18" height="18" rx="2" fill="url(#g1)" stroke="currentColor"/></svg>`,
+  ruler: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.3 8.7 8.7 21.3c-1 1-2.5 1-3.4 0l-2.6-2.6c-1-1-1-2.5 0-3.4L15.3 2.7c1-1 2.5-1 3.4 0l2.6 2.6c1 1 1 2.5 0 3.4z"/><path d="m7.5 10.5 2 2M10.5 7.5l2 2M13.5 4.5l2 2"/></svg>`,
+  eye: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`,
+  edit: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>`,
+  email: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`,
+  diff: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 8l4-4M3 8l4 4M21 16l-4 4M21 16l-4-4"/></svg>`,
+  flask: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6l3 10H6L9 3z"/><path d="M6 13s-3 1.5-3 4c0 2 1.5 4 9 4s9-2 9-4c0-2.5-3-4-3-4"/></svg>`,
+  screenshottopdf: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M9 9h6M9 12h4"/></svg>`,
+  ocr: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h7M7 16h5"/><circle cx="18" cy="16" r="3"/><path d="m22 20-2-2"/></svg>`,
+};
+
+function toolIcon(icon, color) {
+  // If it's an emoji (not a plain ASCII word), render it directly
+  if (/\p{Emoji}/u.test(icon)) {
+    return `<span style="font-size:1.5rem;line-height:1;display:flex;align-items:center;justify-content:center;">${icon}</span>`;
+  }
+  // Fallback to SVG lookup
+  return ICONS[icon]
+    ? ICONS[icon].replace('stroke="currentColor"', `stroke="${color}"`).replace(/fill="currentColor"/g, `fill="${color}"`)
+    : `<span style="font-size:1.4rem;line-height:1;display:flex;align-items:center;justify-content:center;">🔧</span>`;
+}
+
+// ============================================================
+// TOOLS DATA
+// ============================================================
+const TOOLS = [
+  // IMAGE TOOLS
+  {id:'image-compressor',name:'Image Compressor',desc:'Reduce image file size without losing quality',icon:'🗜️',cat:'image',color:'#2563eb',bg:'#eff6ff',popular:true},
+  {id:'image-resizer',name:'Image Resizer',desc:'Resize images to any dimension instantly',icon:'📏',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'jpg-to-png',name:'JPG to PNG',desc:'Convert JPG images to PNG format',icon:'🔄',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'png-to-jpg',name:'PNG to JPG',desc:'Convert PNG images to JPG format',icon:'🔄',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'webp-to-jpg',name:'WebP to JPG',desc:'Convert WebP images to JPG format',icon:'🌐',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'jpg-to-webp',name:'JPG to WebP',desc:'Convert JPG images to WebP format',icon:'🌐',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'image-cropper',name:'Image Cropper',desc:'Crop images to custom dimensions',icon:'✂️',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'image-rotator',name:'Image Rotator',desc:'Rotate and flip images easily',icon:'🔃',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'image-to-base64',name:'Image to Base64',desc:'Convert images to Base64 encoded string',icon:'🧾',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'base64-to-image',name:'Base64 to Image',desc:'Decode Base64 string back to image',icon:'🖼️',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'image-watermark',name:'Image Watermark',desc:'Add text or image watermark to photos',icon:'💧',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'color-picker',name:'Image Color Picker',desc:'Pick colors from any image',icon:'🎨',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'image-metadata',name:'Image Metadata Viewer',desc:'View EXIF and metadata of images',icon:'📊',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'image-blur',name:'Image Blur Tool',desc:'Apply blur effect to images',icon:'🌫️',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  {id:'image-sharpen',name:'Image Sharpen Tool',desc:'Sharpen blurry or soft images',icon:'✨',cat:'image',color:'#2563eb',bg:'#eff6ff'},
+  // PDF TOOLS
+  {id:'pdf-to-word',name:'PDF to Word',desc:'Convert PDF documents to editable Word files',icon:'📄',cat:'pdf',color:'#dc2626',bg:'#fef2f2',popular:true},
+  {id:'word-to-pdf',name:'Word to PDF',desc:'Convert Word documents to PDF format',icon:'📝',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-to-jpg',name:'PDF to JPG',desc:'Extract pages from PDF as JPG images',icon:'🖼️',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'jpg-to-pdf',name:'JPG to PDF',desc:'Combine JPG images into a PDF file',icon:'📄',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-compressor',name:'PDF Compressor',desc:'Reduce PDF file size significantly',icon:'📉',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-merger',name:'PDF Merger',desc:'Merge multiple PDF files into one',icon:'🔗',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-splitter',name:'PDF Splitter',desc:'Split a PDF into separate pages',icon:'✂️',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-page-remover',name:'PDF Page Remover',desc:'Remove specific pages from a PDF',icon:'🗑️',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-rotator',name:'PDF Page Rotator',desc:'Rotate pages within a PDF file',icon:'🔄',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-unlock',name:'PDF Unlock Tool',desc:'Remove password protection from PDFs',icon:'🔓',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-lock',name:'PDF Lock Tool',desc:'Add password protection to PDFs',icon:'🔒',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-to-excel',name:'PDF to Excel',desc:'Convert PDF tables to Excel spreadsheets',icon:'📊',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'excel-to-pdf',name:'Excel to PDF',desc:'Convert Excel files to PDF format',icon:'📄',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-to-text',name:'PDF to Text',desc:'Extract plain text content from PDF',icon:'📝',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  {id:'pdf-page-numbers',name:'PDF Page Number Adder',desc:'Add page numbers to PDF documents',icon:'🔢',cat:'pdf',color:'#dc2626',bg:'#fef2f2'},
+  // TEXT TOOLS
+  {id:'word-counter',name:'Word Counter',desc:'Count words, characters, sentences and more',icon:'🔢',cat:'text',color:'#16a34a',bg:'#f0fdf4',popular:true},
+  {id:'character-counter',name:'Character Counter',desc:'Count characters with and without spaces',icon:'🔠',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  {id:'text-to-speech',name:'Text to Speech',desc:'Convert text to natural-sounding audio',icon:'🔊',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  {id:'speech-to-text',name:'Speech to Text',desc:'Transcribe audio to written text',icon:'🎤',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  {id:'case-converter',name:'Case Converter',desc:'Convert text between cases (upper, lower, title)',icon:'🔡',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  {id:'remove-line-breaks',name:'Remove Line Breaks',desc:'Clean up unwanted line breaks from text',icon:'🧹',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  {id:'text-sorter',name:'Text Sorter',desc:'Sort lines of text alphabetically',icon:'📑',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  {id:'duplicate-remover',name:'Duplicate Line Remover',desc:'Remove duplicate lines from text',icon:'❌',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  {id:'random-text',name:'Random Text Generator',desc:'Generate random text for testing',icon:'🎲',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  {id:'lorem-ipsum',name:'Lorem Ipsum Generator',desc:'Generate placeholder text for designs',icon:'📝',cat:'text',color:'#16a34a',bg:'#f0fdf4'},
+  // DEVELOPER TOOLS
+  {id:'base64-encoder',name:'Base64 Encoder',desc:'Encode text or data to Base64 format',icon:'🔐',cat:'developer',color:'#7c3aed',bg:'#faf5ff',popular:true},
+  {id:'base64-decoder',name:'Base64 Decoder',desc:'Decode Base64 encoded strings',icon:'🔓',cat:'developer',color:'#7c3aed',bg:'#faf5ff'},
+  {id:'json-formatter',name:'JSON Formatter',desc:'Format and beautify JSON data',icon:'🧾',cat:'developer',color:'#7c3aed',bg:'#faf5ff',popular:true},
+  {id:'json-validator',name:'JSON Validator',desc:'Validate JSON syntax and structure',icon:'✔️',cat:'developer',color:'#7c3aed',bg:'#faf5ff'},
+  {id:'html-formatter',name:'HTML Formatter',desc:'Beautify and format HTML code',icon:'🌐',cat:'developer',color:'#7c3aed',bg:'#faf5ff'},
+  {id:'css-minifier',name:'CSS Minifier',desc:'Minify CSS code for production',icon:'⚡',cat:'developer',color:'#7c3aed',bg:'#faf5ff'},
+  {id:'css-beautifier',name:'CSS Beautifier',desc:'Beautify and format CSS code',icon:'🧾',cat:'developer',color:'#7c3aed',bg:'#faf5ff'},
+  {id:'js-minifier',name:'JavaScript Minifier',desc:'Minify JavaScript for faster loading',icon:'⚡',cat:'developer',color:'#7c3aed',bg:'#faf5ff'},
+  {id:'url-encoder',name:'URL Encoder',desc:'Encode special characters in URLs',icon:'🔗',cat:'developer',color:'#7c3aed',bg:'#faf5ff'},
+  {id:'url-decoder',name:'URL Decoder',desc:'Decode URL-encoded strings',icon:'🔓',cat:'developer',color:'#7c3aed',bg:'#faf5ff'},
+  // SEO TOOLS
+  {id:'keyword-density',name:'Keyword Density Checker',desc:'Analyze keyword frequency in content',icon:'🔍',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'meta-tag-generator',name:'Meta Tag Generator',desc:'Generate SEO-optimized meta tags',icon:'🏷️',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'meta-tag-analyzer',name:'Meta Tag Analyzer',desc:'Analyze meta tags from any URL',icon:'📊',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'robots-txt',name:'Robots.txt Generator',desc:'Generate a robots.txt file for SEO',icon:'🤖',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'sitemap-generator',name:'Sitemap Generator',desc:'Create XML sitemaps for websites',icon:'🗺️',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'google-index-checker',name:'Google Index Checker',desc:'Check if your pages are indexed by Google',icon:'📑',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'domain-authority',name:'Domain Authority Checker',desc:'Check domain authority and trust score',icon:'📊',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'backlink-checker',name:'Backlink Checker',desc:'Analyze backlinks pointing to any domain',icon:'🔗',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'keyword-position',name:'Keyword Position Checker',desc:'Track keyword rankings on search engines',icon:'📈',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  {id:'page-speed',name:'Page Speed Checker',desc:'Test website loading speed and performance',icon:'⚡',cat:'seo',color:'#d97706',bg:'#fffbeb'},
+  // WEBSITE TOOLS
+  {id:'website-screenshot',name:'Website Screenshot',desc:'Capture screenshots of any website',icon:'📸',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'website-down',name:'Website Down Checker',desc:'Check if a website is up or down',icon:'🚫',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'dns-lookup',name:'DNS Lookup Tool',desc:'Look up DNS records for any domain',icon:'🌐',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'ip-lookup',name:'IP Lookup Tool',desc:'Get detailed info for any IP address',icon:'📍',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'hosting-checker',name:'Hosting Checker',desc:'Find out who hosts any website',icon:'🏢',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'ssl-checker',name:'SSL Checker',desc:'Verify SSL certificate status of websites',icon:'🔒',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'whois-lookup',name:'Whois Domain Lookup',desc:'Get domain registration information',icon:'🌍',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'redirect-checker',name:'Redirect Checker',desc:'Trace URL redirects and chains',icon:'🔀',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'http-header',name:'HTTP Header Checker',desc:'Inspect HTTP response headers',icon:'📡',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  {id:'mobile-friendly',name:'Mobile Friendly Test',desc:'Test if your website is mobile-friendly',icon:'📱',cat:'website',color:'#0891b2',bg:'#ecfeff'},
+  // CALCULATOR TOOLS
+  {id:'percentage-calc',name:'Percentage Calculator',desc:'Calculate percentages easily',icon:'📊',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  {id:'age-calculator',name:'Age Calculator',desc:'Calculate exact age from date of birth',icon:'🎂',cat:'calculator',color:'#059669',bg:'#ecfdf5',popular:true},
+  {id:'bmi-calculator',name:'BMI Calculator',desc:'Calculate your Body Mass Index',icon:'⚖️',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  {id:'loan-emi',name:'Loan EMI Calculator',desc:'Calculate monthly loan EMI payments',icon:'💰',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  {id:'gst-calculator',name:'GST Calculator',desc:'Calculate GST for products and services',icon:'🧾',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  {id:'discount-calculator',name:'Discount Calculator',desc:'Calculate discounts and sale prices',icon:'🏷️',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  {id:'time-calculator',name:'Time Calculator',desc:'Add, subtract and convert time values',icon:'⏱️',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  {id:'date-difference',name:'Date Difference Calculator',desc:'Find days between two dates',icon:'📅',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  {id:'binary-decimal',name:'Binary to Decimal',desc:'Convert binary numbers to decimal',icon:'🔢',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  {id:'number-to-words',name:'Number to Words',desc:'Convert numbers to word representation',icon:'🔤',cat:'calculator',color:'#059669',bg:'#ecfdf5'},
+  // SOCIAL MEDIA TOOLS
+  {id:'yt-thumbnail',name:'YouTube Thumbnail Downloader',desc:'Download thumbnails from YouTube videos',icon:'📸',cat:'social',color:'#dc2626',bg:'#fef2f2',popular:true},
+  {id:'yt-title',name:'YouTube Title Generator',desc:'Generate catchy YouTube video titles',icon:'🎬',cat:'social',color:'#dc2626',bg:'#fef2f2'},
+  {id:'yt-tags',name:'YouTube Tag Generator',desc:'Generate relevant tags for YouTube videos',icon:'🏷️',cat:'social',color:'#dc2626',bg:'#fef2f2'},
+  {id:'instagram-downloader',name:'Instagram Photo Downloader',desc:'Download photos from Instagram posts',icon:'📷',cat:'social',color:'#db2777',bg:'#fdf2f8'},
+  {id:'tiktok-downloader',name:'TikTok Video Downloader',desc:'Download TikTok videos without watermark',icon:'🎵',cat:'social',color:'#1a1a2e',bg:'#f8f8ff'},
+  {id:'twitter-downloader',name:'Twitter Video Downloader',desc:'Download videos from Twitter/X posts',icon:'🐦',cat:'social',color:'#1d9bf0',bg:'#eff6ff'},
+  {id:'facebook-downloader',name:'Facebook Video Downloader',desc:'Download videos from Facebook',icon:'📘',cat:'social',color:'#1877f2',bg:'#eff6ff'},
+  {id:'hashtag-generator',name:'Hashtag Generator',desc:'Generate trending hashtags for posts',icon:'#️⃣',cat:'social',color:'#db2777',bg:'#fdf2f8'},
+  {id:'yt-description',name:'YouTube Description Generator',desc:'Generate SEO-friendly YouTube descriptions',icon:'📝',cat:'social',color:'#dc2626',bg:'#fef2f2'},
+  {id:'yt-channel-id',name:'YouTube Channel ID Finder',desc:'Find any YouTube channel ID instantly',icon:'🆔',cat:'social',color:'#dc2626',bg:'#fef2f2'},
+  // FILE TOOLS
+  {id:'zip-extractor',name:'ZIP File Extractor',desc:'Extract files from ZIP archives',icon:'📦',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'file-reducer',name:'File Size Reducer',desc:'Reduce the size of any file',icon:'📉',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'file-converter',name:'File Converter',desc:'Convert files between formats',icon:'🔄',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'audio-converter',name:'Audio Converter',desc:'Convert audio files between formats',icon:'🎧',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'video-converter',name:'Video Converter',desc:'Convert video files between formats',icon:'🎬',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'video-compressor',name:'Video Compressor',desc:'Compress video files without quality loss',icon:'📉',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'mp3-cutter',name:'MP3 Cutter',desc:'Cut and trim MP3 audio files',icon:'✂️',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'video-to-gif',name:'Video to GIF Converter',desc:'Convert video clips to GIF animations',icon:'🎞️',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'gif-maker',name:'GIF Maker',desc:'Create GIF animations from images',icon:'🎨',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  {id:'gif-to-video',name:'GIF to Video Converter',desc:'Convert GIF animations to video files',icon:'🔄',cat:'file',color:'#6366f1',bg:'#eef2ff'},
+  // MISC TOOLS
+  {id:'password-generator',name:'Password Generator',desc:'Generate strong, secure passwords',icon:'🔑',cat:'misc',color:'#f59e0b',bg:'#fffbeb',popular:true},
+  {id:'qr-code-generator',name:'QR Code Generator',desc:'Create QR codes for URLs and text',icon:'📱',cat:'misc',color:'#f59e0b',bg:'#fffbeb',popular:true},
+  {id:'qr-code-scanner',name:'QR Code Scanner',desc:'Scan and decode QR codes from images',icon:'📷',cat:'misc',color:'#f59e0b',bg:'#fffbeb'},
+  {id:'barcode-generator',name:'Barcode Generator',desc:'Generate barcodes in multiple formats',icon:'📊',cat:'misc',color:'#f59e0b',bg:'#fffbeb'},
+  {id:'uuid-generator',name:'UUID Generator',desc:'Generate unique UUID/GUID identifiers',icon:'🆔',cat:'misc',color:'#f59e0b',bg:'#fffbeb'},
+  {id:'random-number',name:'Random Number Generator',desc:'Generate random numbers with custom range',icon:'🎲',cat:'misc',color:'#f59e0b',bg:'#fffbeb'},
+  {id:'random-name',name:'Random Name Picker',desc:'Pick a random name from a list',icon:'👥',cat:'misc',color:'#f59e0b',bg:'#fffbeb'},
+  {id:'color-palette',name:'Color Palette Generator',desc:'Generate beautiful color palettes',icon:'🎨',cat:'misc',color:'#f59e0b',bg:'#fffbeb'},
+  {id:'gradient-generator',name:'Gradient Generator',desc:'Create CSS gradient backgrounds',icon:'🌈',cat:'misc',color:'#f59e0b',bg:'#fffbeb'},
+  {id:'unit-converter',name:'Unit Converter',desc:'Convert between various units of measurement',icon:'📏',cat:'misc',color:'#f59e0b',bg:'#fffbeb'},
+  // ADVANCED TOOLS
+  {id:'plagiarism-checker',name:'Plagiarism Checker',desc:'Detect copied content in your text',icon:'🕵️',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'grammar-checker',name:'Grammar Checker',desc:'Check and fix grammar in your writing',icon:'✍️',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'ai-content-detector',name:'AI Content Detector',desc:'Detect AI-generated text in content',icon:'🤖',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'email-extractor',name:'Email Extractor',desc:'Extract email addresses from text',icon:'📧',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'html-to-markdown',name:'HTML to Markdown',desc:'Convert HTML to Markdown format',icon:'🔄',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'markdown-to-html',name:'Markdown to HTML',desc:'Convert Markdown to HTML format',icon:'🔄',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'code-diff',name:'Code Diff Checker',desc:'Compare two code files and find differences',icon:'⚖️',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'regex-tester',name:'Regex Tester',desc:'Test and debug regular expressions',icon:'🧪',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'screenshot-to-pdf',name:'Screenshot to PDF',desc:'Convert screenshots to PDF documents',icon:'📸',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+  {id:'image-to-text',name:'Image to Text (OCR)',desc:'Extract text from images using OCR',icon:'📝',cat:'advanced',color:'#64748b',bg:'#f8fafc'},
+];
+const CAT_META = {
+  image:    {name:'Image Tools',    icon:'image',   color:'#2563eb'},
+  pdf:      {name:'PDF Tools',      icon:'pdf',     color:'#dc2626'},
+  text:     {name:'Text Tools',     icon:'type',    color:'#16a34a'},
+  developer:{name:'Developer Tools',icon:'code',    color:'#7c3aed'},
+  seo:      {name:'SEO Tools',      icon:'search',  color:'#d97706'},
+  website:  {name:'Website Tools',  icon:'globe',   color:'#0891b2'},
+  calculator:{name:'Calculator Tools',icon:'percent',color:'#059669'},
+  social:   {name:'Social Media',   icon:'youtube', color:'#db2777'},
+  file:     {name:'File Tools',     icon:'archive', color:'#6366f1'},
+  misc:     {name:'Misc Tools',     icon:'key',     color:'#f59e0b'},
+  advanced: {name:'Advanced Tools', icon:'robot',   color:'#64748b'},
+};
+
+// ============================================================
+// TOOL PAGE CONTENT
+// ============================================================
+function getToolPageHTML(tool) {
+  const related = TOOLS.filter(t => t.cat === tool.cat && t.id !== tool.id).slice(0,4);
+  const relatedHTML = related.map(t=>`
+    <div class="tool-card" style="--card-accent:${t.color};--card-bg:${t.bg};--card-color:${t.color}" onclick="openTool('${t.id}')">
+      <div class="tool-icon" style="background:${t.bg}">${toolIcon(t.icon,t.color)}</div>
+      <div class="tool-name">${t.name}</div>
+      <div class="tool-desc">${t.desc}</div>
+      <div class="tool-btn">Open Tool →</div>
+    </div>`).join('');
+
+  // Generate tool-specific interface
+  let iface = getToolInterface(tool);
+
+  return `
+    <div class="back-btn" onclick="history.back(); showPage('all-tools')">← Back to Tools</div>
+    <div class="breadcrumb">
+      <a href="#" onclick="showPage('home')">Home</a> <span>/</span>
+      <a href="#" onclick="filterCat('${tool.cat}')">${CAT_META[tool.cat].name}</a> <span>/</span>
+      <span>${tool.name}</span>
+    </div>
+    <div class="tool-page-header">
+      <div class="tool-page-icon" style="width:56px;height:56px;border-radius:14px;background:${tool.bg};display:flex;align-items:center;justify-content:center;margin-bottom:12px">${toolIcon(tool.icon,tool.color)}</div>
+      <div class="tool-page-title">${tool.name}</div>
+      <div class="tool-page-desc">${tool.desc}. Free, fast and works directly in your browser.</div>
+    </div>
+    <div class="tool-interface">${iface}</div>
+    ${related.length ? `<div class="related-tools"><div class="related-title">Related Tools</div><div class="tools-grid">${relatedHTML}</div></div>` : ''}
+  `;
+}
+
+function getToolInterface(tool) {
+  // Word Counter
+  if (tool.id === 'word-counter') return `
+    <label class="tool-label">Enter or paste your text below:</label>
+    <textarea id="wc-input" placeholder="Start typing or paste your text here..." oninput="doWordCount()" rows="8"></textarea>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin-top:16px">
+      ${['Words','Characters','Characters (no spaces)','Sentences','Paragraphs','Reading Time'].map((l,i)=>`
+      <div class="result-box" style="padding:16px"><div class="result-value" id="wc-${i}">0</div><div class="result-label">${l}</div></div>`).join('')}
+    </div>`;
+
+  // Case Converter
+  if (tool.id === 'case-converter') return `
+    <label class="tool-label">Enter your text:</label>
+    <textarea id="cc-input" placeholder="Type or paste your text here..." rows="5"></textarea>
+    <div class="tool-actions">
+      <button class="btn-tool btn-tool-primary" onclick="convertCase('upper')">UPPERCASE</button>
+      <button class="btn-tool btn-tool-secondary" onclick="convertCase('lower')">lowercase</button>
+      <button class="btn-tool btn-tool-secondary" onclick="convertCase('title')">Title Case</button>
+      <button class="btn-tool btn-tool-secondary" onclick="convertCase('sentence')">Sentence case</button>
+      <button class="btn-tool btn-tool-secondary" onclick="convertCase('camel')">camelCase</button>
+    </div>
+    <div class="output-label">Output <button class="copy-btn" onclick="copyOutput('cc-output')">📋 Copy</button></div>
+    <div class="tool-output" id="cc-output">Result will appear here...</div>`;
+
+  // Password Generator
+  if (tool.id === 'password-generator') return `
+    <label class="tool-label">Password Length: <strong id="pass-len-val">16</strong></label>
+    <input type="range" min="6" max="64" value="16" oninput="document.getElementById('pass-len-val').textContent=this.value;genPassword()" id="pass-len" style="margin-bottom:16px">
+    <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:16px">
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:.9rem"><input type="checkbox" id="pass-upper" checked onchange="genPassword()"> Uppercase (A-Z)</label>
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:.9rem"><input type="checkbox" id="pass-lower" checked onchange="genPassword()"> Lowercase (a-z)</label>
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:.9rem"><input type="checkbox" id="pass-num" checked onchange="genPassword()"> Numbers (0-9)</label>
+      <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:.9rem"><input type="checkbox" id="pass-sym" checked onchange="genPassword()"> Symbols (!@#$)</label>
+    </div>
+    <div class="output-label">Generated Password <button class="copy-btn" onclick="copyOutput('pass-output')">📋 Copy</button></div>
+    <div class="tool-output success" id="pass-output" style="font-size:1.2rem;letter-spacing:.08em;text-align:center;padding:20px">Click generate!</div>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="genPassword()">🔑 Generate Password</button></div>`;
+
+  // QR Code Generator
+  if (tool.id === 'qr-code-generator') return `
+    <label class="tool-label">Enter URL or Text:</label>
+    <input type="text" id="qr-input" placeholder="https://example.com or any text..." style="margin-bottom:16px">
+    <label class="tool-label">Size:</label>
+    <select id="qr-size" style="margin-bottom:16px">
+      <option value="150">Small (150x150)</option>
+      <option value="200" selected>Medium (200x200)</option>
+      <option value="300">Large (300x300)</option>
+      <option value="400">Extra Large (400x400)</option>
+    </select>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="genQR()">📱 Generate QR Code</button></div>
+    <div id="qr-output" style="margin-top:20px;text-align:center;display:none">
+      <img id="qr-img" style="border-radius:var(--radius-sm);border:2px solid var(--border);max-width:100%">
+      <div style="margin-top:12px"><a id="qr-download" download="qrcode.png"><button class="btn-tool btn-tool-secondary">⬇️ Download QR Code</button></a></div>
+    </div>`;
+
+  // JSON Formatter
+  if (tool.id === 'json-formatter') return `
+    <label class="tool-label">Paste your JSON:</label>
+    <textarea id="jf-input" placeholder='{"key": "value", "array": [1,2,3]}' rows="7"></textarea>
+    <div class="tool-actions">
+      <button class="btn-tool btn-tool-primary" onclick="formatJSON()">✨ Format JSON</button>
+      <button class="btn-tool btn-tool-secondary" onclick="minifyJSON()">⚡ Minify</button>
+      <button class="btn-tool btn-tool-secondary" onclick="validateJSON()">✔️ Validate</button>
+    </div>
+    <div class="output-label">Formatted Output <button class="copy-btn" onclick="copyOutput('jf-output')">📋 Copy</button></div>
+    <div class="tool-output" id="jf-output">Formatted JSON will appear here...</div>`;
+
+  // Base64 Encoder
+  if (tool.id === 'base64-encoder') return `
+    <label class="tool-label">Text to Encode:</label>
+    <textarea id="b64e-input" placeholder="Enter text to encode to Base64..." rows="5"></textarea>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="encodeB64()">🔐 Encode to Base64</button></div>
+    <div class="output-label">Base64 Encoded Output <button class="copy-btn" onclick="copyOutput('b64e-output')">📋 Copy</button></div>
+    <div class="tool-output" id="b64e-output">Encoded output will appear here...</div>`;
+
+  // Base64 Decoder
+  if (tool.id === 'base64-decoder') return `
+    <label class="tool-label">Base64 to Decode:</label>
+    <textarea id="b64d-input" placeholder="Enter Base64 string to decode..." rows="5"></textarea>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="decodeB64()">🔓 Decode Base64</button></div>
+    <div class="output-label">Decoded Output <button class="copy-btn" onclick="copyOutput('b64d-output')">📋 Copy</button></div>
+    <div class="tool-output" id="b64d-output">Decoded text will appear here...</div>`;
+
+  // URL Encoder
+  if (tool.id === 'url-encoder') return `
+    <label class="tool-label">Text to URL Encode:</label>
+    <textarea id="urle-input" placeholder="Enter text to URL encode..." rows="4"></textarea>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="urlEncode()">🔗 Encode URL</button></div>
+    <div class="output-label">URL Encoded Output <button class="copy-btn" onclick="copyOutput('urle-output')">📋 Copy</button></div>
+    <div class="tool-output" id="urle-output">Encoded URL will appear here...</div>`;
+
+  // URL Decoder
+  if (tool.id === 'url-decoder') return `
+    <label class="tool-label">URL to Decode:</label>
+    <textarea id="urld-input" placeholder="Enter URL-encoded string to decode..." rows="4"></textarea>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="urlDecode()">🔓 Decode URL</button></div>
+    <div class="output-label">Decoded Output <button class="copy-btn" onclick="copyOutput('urld-output')">📋 Copy</button></div>
+    <div class="tool-output" id="urld-output">Decoded URL will appear here...</div>`;
+
+  // Lorem Ipsum
+  if (tool.id === 'lorem-ipsum') return `
+    <label class="tool-label">Number of Paragraphs:</label>
+    <input type="number" id="li-count" value="3" min="1" max="20" style="margin-bottom:16px;width:120px">
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="genLorem()">📝 Generate Lorem Ipsum</button></div>
+    <div class="output-label">Generated Text <button class="copy-btn" onclick="copyOutput('li-output')">📋 Copy</button></div>
+    <div class="tool-output" id="li-output">Lorem ipsum text will appear here...</div>`;
+
+  // Age Calculator
+  if (tool.id === 'age-calculator') return `
+    <label class="tool-label">Date of Birth:</label>
+    <input type="text" id="age-dob" placeholder="YYYY-MM-DD (e.g. 1995-06-15)" style="margin-bottom:16px;max-width:280px">
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="calcAge()">🎂 Calculate Age</button></div>
+    <div id="age-result" style="margin-top:16px;display:none">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px">
+        <div class="result-box"><div class="result-value" id="age-years">-</div><div class="result-label">Years</div></div>
+        <div class="result-box"><div class="result-value" id="age-months">-</div><div class="result-label">Months</div></div>
+        <div class="result-box"><div class="result-value" id="age-days">-</div><div class="result-label">Days</div></div>
+        <div class="result-box"><div class="result-value" id="age-total">-</div><div class="result-label">Total Days</div></div>
+      </div>
+    </div>`;
+
+  // BMI Calculator
+  if (tool.id === 'bmi-calculator') return `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div><label class="tool-label">Height (cm):</label><input type="number" id="bmi-h" placeholder="175" min="50" max="250"></div>
+      <div><label class="tool-label">Weight (kg):</label><input type="number" id="bmi-w" placeholder="70" min="10" max="300"></div>
+    </div>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="calcBMI()">⚖️ Calculate BMI</button></div>
+    <div id="bmi-result" style="margin-top:16px;display:none">
+      <div class="result-box"><div class="result-value" id="bmi-val">-</div><div class="result-label" id="bmi-cat">-</div></div>
+      <div class="info-box" id="bmi-info"></div>
+    </div>`;
+
+  // Percentage Calculator
+  if (tool.id === 'percentage-calc') return `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div><label class="tool-label">Value:</label><input type="number" id="pct-val" placeholder="500"></div>
+      <div><label class="tool-label">Percentage (%):</label><input type="number" id="pct-pct" placeholder="20"></div>
+    </div>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="calcPct()">📊 Calculate</button></div>
+    <div id="pct-result" style="margin-top:16px;display:none">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+        <div class="result-box"><div class="result-value" id="pct-r1">-</div><div class="result-label" id="pct-l1">Result</div></div>
+        <div class="result-box"><div class="result-value" id="pct-r2">-</div><div class="result-label">After Increase</div></div>
+        <div class="result-box"><div class="result-value" id="pct-r3">-</div><div class="result-label">After Decrease</div></div>
+      </div>
+    </div>`;
+
+  // UUID Generator
+  if (tool.id === 'uuid-generator') return `
+    <label class="tool-label">How many UUIDs to generate:</label>
+    <input type="number" id="uuid-count" value="5" min="1" max="100" style="margin-bottom:16px;width:120px">
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="genUUID()">🆔 Generate UUIDs</button></div>
+    <div class="output-label">Generated UUIDs <button class="copy-btn" onclick="copyOutput('uuid-output')">📋 Copy All</button></div>
+    <div class="tool-output" id="uuid-output">UUIDs will appear here...</div>`;
+
+  // Random Number
+  if (tool.id === 'random-number') return `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+      <div><label class="tool-label">Min Value:</label><input type="number" id="rn-min" value="1"></div>
+      <div><label class="tool-label">Max Value:</label><input type="number" id="rn-max" value="100"></div>
+    </div>
+    <label class="tool-label">How many numbers:</label>
+    <input type="number" id="rn-count" value="1" min="1" max="100" style="margin-bottom:16px;width:120px">
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="genRandom()">🎲 Generate</button></div>
+    <div id="rn-result" style="margin-top:16px;display:none">
+      <div class="result-box"><div class="result-value" id="rn-val" style="font-size:2.5rem">-</div><div class="result-label">Random Number</div></div>
+    </div>`;
+
+  // Meta Tag Generator
+  if (tool.id === 'meta-tag-generator') return `
+    <div style="display:grid;gap:14px">
+      <div><label class="tool-label">Page Title:</label><input type="text" id="mt-title" placeholder="My Awesome Page | Brand Name"></div>
+      <div><label class="tool-label">Description:</label><textarea id="mt-desc" placeholder="A brief description of this page for search engines..." rows="3" style="min-height:80px"></textarea></div>
+      <div><label class="tool-label">Keywords (comma-separated):</label><input type="text" id="mt-kw" placeholder="keyword1, keyword2, keyword3"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div><label class="tool-label">Author:</label><input type="text" id="mt-author" placeholder="Your Name"></div>
+        <div><label class="tool-label">Canonical URL:</label><input type="text" id="mt-url" placeholder="https://example.com/page"></div>
+      </div>
+    </div>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="genMetaTags()">🏷️ Generate Meta Tags</button></div>
+    <div class="output-label">Generated Meta Tags <button class="copy-btn" onclick="copyOutput('mt-output')">📋 Copy</button></div>
+    <div class="tool-output" id="mt-output">Meta tags will appear here...</div>`;
+
+  // HTML to Markdown
+  if (tool.id === 'html-to-markdown') return `
+    <label class="tool-label">HTML Code:</label>
+    <textarea id="htm-input" placeholder="<h1>Title</h1><p>Paragraph text here...</p>" rows="7"></textarea>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="htmlToMd()">🔄 Convert to Markdown</button></div>
+    <div class="output-label">Markdown Output <button class="copy-btn" onclick="copyOutput('htm-output')">📋 Copy</button></div>
+    <div class="tool-output" id="htm-output">Markdown will appear here...</div>`;
+
+  // Markdown to HTML
+  if (tool.id === 'markdown-to-html') return `
+    <label class="tool-label">Markdown Text:</label>
+    <textarea id="mth-input" placeholder="# Heading\n\n**Bold text** and *italic text*\n\n- List item 1\n- List item 2" rows="7"></textarea>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="mdToHtml()">🔄 Convert to HTML</button></div>
+    <div class="output-label">HTML Output <button class="copy-btn" onclick="copyOutput('mth-output')">📋 Copy</button></div>
+    <div class="tool-output" id="mth-output">HTML will appear here...</div>`;
+
+  // Email Extractor
+  if (tool.id === 'email-extractor') return `
+    <label class="tool-label">Paste text containing email addresses:</label>
+    <textarea id="ee-input" placeholder="Paste any text, HTML, or content that may contain email addresses..." rows="7"></textarea>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="extractEmails()">📧 Extract Emails</button></div>
+    <div class="output-label" id="ee-label">Extracted Emails <button class="copy-btn" onclick="copyOutput('ee-output')">📋 Copy</button></div>
+    <div class="tool-output" id="ee-output">Extracted email addresses will appear here...</div>`;
+
+  // Regex Tester
+  if (tool.id === 'regex-tester') return `
+    <div style="display:grid;grid-template-columns:3fr 1fr;gap:12px;margin-bottom:14px">
+      <div><label class="tool-label">Regular Expression:</label><input type="text" id="rx-pattern" placeholder="e.g. \\d+" ></div>
+      <div><label class="tool-label">Flags:</label><input type="text" id="rx-flags" value="g" placeholder="gim"></div>
+    </div>
+    <label class="tool-label">Test String:</label>
+    <textarea id="rx-test" placeholder="Enter text to test the regex against..." rows="5" style="margin-bottom:14px"></textarea>
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="testRegex()">🧪 Test Regex</button></div>
+    <div class="output-label">Matches <button class="copy-btn" onclick="copyOutput('rx-output')">📋 Copy</button></div>
+    <div class="tool-output" id="rx-output">Regex matches will appear here...</div>`;
+
+  // Duplicate Line Remover
+  if (tool.id === 'duplicate-remover') return `
+    <label class="tool-label">Paste your text (one item per line):</label>
+    <textarea id="dr-input" placeholder="apple\nbanana\napple\norange\nbanana\ngrape" rows="7"></textarea>
+    <div class="tool-actions">
+      <button class="btn-tool btn-tool-primary" onclick="removeDups()">❌ Remove Duplicates</button>
+      <button class="btn-tool btn-tool-secondary" onclick="sortLines()">📑 Sort Lines</button>
+    </div>
+    <div class="output-label">Cleaned Output <button class="copy-btn" onclick="copyOutput('dr-output')">📋 Copy</button></div>
+    <div class="tool-output" id="dr-output">Cleaned text will appear here...</div>`;
+
+  // Binary to Decimal
+  if (tool.id === 'binary-decimal') return `
+    <label class="tool-label">Binary Number:</label>
+    <input type="text" id="bd-input" placeholder="e.g. 1010 1101" style="margin-bottom:16px;max-width:300px;font-family:monospace;font-size:1.1rem">
+    <div class="tool-actions"><button class="btn-tool btn-tool-primary" onclick="convBinary()">🔢 Convert</button></div>
+    <div id="bd-result" style="margin-top:16px;display:none">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px">
+        <div class="result-box"><div class="result-value" id="bd-dec">-</div><div class="result-label">Decimal</div></div>
+        <div class="result-box"><div class="result-value" id="bd-hex">-</div><div class="result-label">Hexadecimal</div></div>
+        <div class="result-box"><div class="result-value" id="bd-oct">-</div><div class="result-label">Octal</div></div>
+      </div>
+    </div>`;
+
+  // Default / Coming Soon
+  return `
+    <div class="file-drop" onclick="showToast('This tool is available in the full version!')">
+      <div class="file-drop-icon">${tool.icon}</div>
+      <div class="file-drop-text">Click or drag files here to use ${tool.name}</div>
+      <div class="file-drop-sub">Supports all major file formats • Max 50MB</div>
+    </div>
+    <div class="tool-actions">
+      <button class="btn-tool btn-tool-primary" onclick="showToast('Processing your file...')">⚡ Process Now</button>
+      <button class="btn-tool btn-tool-secondary" onclick="showToast('Cleared!')">🗑️ Clear</button>
+    </div>
+    <div class="info-box">
+      <strong>ℹ️ About ${tool.name}:</strong> ${tool.desc}. This tool works entirely in your browser — no files are uploaded to our servers, ensuring complete privacy and security.
+    </div>`;
+}
+
+// ============================================================
+// TOOL FUNCTIONS
+// ============================================================
+function doWordCount() {
+  const t = document.getElementById('wc-input').value;
+  const words = t.trim() ? t.trim().split(/\s+/).length : 0;
+  const chars = t.length;
+  const charsNoSpace = t.replace(/\s/g,'').length;
+  const sentences = t.trim() ? t.split(/[.!?]+/).filter(s=>s.trim()).length : 0;
+  const paras = t.trim() ? t.split(/\n\s*\n/).filter(p=>p.trim()).length : 0;
+  const readTime = Math.ceil(words/200);
+  const vals = [words,chars,charsNoSpace,sentences,paras,readTime+'min'];
+  vals.forEach((v,i)=>document.getElementById('wc-'+i) && (document.getElementById('wc-'+i).textContent=v));
+}
+function convertCase(type) {
+  const t = document.getElementById('cc-input').value;
+  let r = t;
+  if(type==='upper') r=t.toUpperCase();
+  else if(type==='lower') r=t.toLowerCase();
+  else if(type==='title') r=t.replace(/\w\S*/g,w=>w[0].toUpperCase()+w.slice(1).toLowerCase());
+  else if(type==='sentence') r=t.toLowerCase().replace(/(^\s*\w|[.!?]\s*\w)/g,c=>c.toUpperCase());
+  else if(type==='camel') r=t.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g,(_,c)=>c.toUpperCase());
+  document.getElementById('cc-output').textContent = r;
+}
+function genPassword() {
+  const len = +document.getElementById('pass-len').value;
+  let chars='';
+  if(document.getElementById('pass-upper').checked) chars+='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  if(document.getElementById('pass-lower').checked) chars+='abcdefghijklmnopqrstuvwxyz';
+  if(document.getElementById('pass-num').checked) chars+='0123456789';
+  if(document.getElementById('pass-sym').checked) chars+='!@#$%^&*()_+-=[]{}|;:,.<>?';
+  if(!chars){showToast('Select at least one character type!');return;}
+  let pass='';
+  for(let i=0;i<len;i++) pass+=chars[Math.floor(Math.random()*chars.length)];
+  document.getElementById('pass-output').textContent=pass;
+}
+function genQR() {
+  const text = document.getElementById('qr-input').value.trim();
+  if(!text){showToast('Please enter text or URL!');return;}
+  const size = document.getElementById('qr-size').value;
+  const url = `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(text)}`;
+  const img = document.getElementById('qr-img');
+  const dl = document.getElementById('qr-download');
+  img.src = url; img.width=+size;
+  dl.href = url;
+  document.getElementById('qr-output').style.display='block';
+  showToast('QR Code generated!');
+}
+function formatJSON() {
+  try {
+    const parsed = JSON.parse(document.getElementById('jf-input').value);
+    document.getElementById('jf-output').textContent = JSON.stringify(parsed,null,2);
+    document.getElementById('jf-output').className='tool-output success';
+  } catch(e) {
+    document.getElementById('jf-output').textContent = '❌ Invalid JSON: '+e.message;
+    document.getElementById('jf-output').className='tool-output';
+  }
+}
+function minifyJSON() {
+  try {
+    const parsed = JSON.parse(document.getElementById('jf-input').value);
+    document.getElementById('jf-output').textContent = JSON.stringify(parsed);
+    document.getElementById('jf-output').className='tool-output success';
+  } catch(e) {
+    document.getElementById('jf-output').textContent = '❌ Invalid JSON: '+e.message;
+  }
+}
+function validateJSON() {
+  try {
+    JSON.parse(document.getElementById('jf-input').value);
+    document.getElementById('jf-output').textContent = '✅ Valid JSON! Your JSON is well-formed and valid.';
+    document.getElementById('jf-output').className='tool-output success';
+  } catch(e) {
+    document.getElementById('jf-output').textContent = '❌ Invalid JSON:\n'+e.message;
+    document.getElementById('jf-output').className='tool-output';
+  }
+}
+function encodeB64() {
+  try {
+    const r = btoa(unescape(encodeURIComponent(document.getElementById('b64e-input').value)));
+    document.getElementById('b64e-output').textContent = r;
+    document.getElementById('b64e-output').className='tool-output success';
+  } catch(e) { document.getElementById('b64e-output').textContent='Error: '+e.message; }
+}
+function decodeB64() {
+  try {
+    const r = decodeURIComponent(escape(atob(document.getElementById('b64d-input').value.trim())));
+    document.getElementById('b64d-output').textContent = r;
+    document.getElementById('b64d-output').className='tool-output success';
+  } catch(e) { document.getElementById('b64d-output').textContent='❌ Invalid Base64: '+e.message; }
+}
+function urlEncode() {
+  document.getElementById('urle-output').textContent = encodeURIComponent(document.getElementById('urle-input').value);
+  document.getElementById('urle-output').className='tool-output success';
+}
+function urlDecode() {
+  try {
+    document.getElementById('urld-output').textContent = decodeURIComponent(document.getElementById('urld-input').value);
+    document.getElementById('urld-output').className='tool-output success';
+  } catch(e) { document.getElementById('urld-output').textContent='❌ Invalid URL encoding: '+e.message; }
+}
+function genLorem() {
+  const count = Math.min(20, Math.max(1, +document.getElementById('li-count').value || 3));
+  const sentences = [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+    'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
+    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+    'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.',
+    'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.',
+    'Ut labore et dolore magnam aliquam quaerat voluptatem.',
+    'Quis autem vel eum iure reprehenderit qui in ea voluptate velit.',
+    'Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.',
+  ];
+  let paras = [];
+  for(let i=0;i<count;i++){
+    const num = 3 + Math.floor(Math.random()*4);
+    let para = [];
+    for(let j=0;j<num;j++) para.push(sentences[Math.floor(Math.random()*sentences.length)]);
+    paras.push(para.join(' '));
+  }
+  document.getElementById('li-output').textContent = paras.join('\n\n');
+  document.getElementById('li-output').className='tool-output success';
+}
+function calcAge() {
+  const dob = new Date(document.getElementById('age-dob').value);
+  if(isNaN(dob)){showToast('Please enter a valid date (YYYY-MM-DD)');return;}
+  const today = new Date();
+  let years = today.getFullYear()-dob.getFullYear();
+  let months = today.getMonth()-dob.getMonth();
+  let days = today.getDate()-dob.getDate();
+  if(days<0){months--;days+=new Date(today.getFullYear(),today.getMonth(),0).getDate();}
+  if(months<0){years--;months+=12;}
+  const totalDays = Math.floor((today-dob)/86400000);
+  document.getElementById('age-years').textContent=years;
+  document.getElementById('age-months').textContent=months;
+  document.getElementById('age-days').textContent=days;
+  document.getElementById('age-total').textContent=totalDays.toLocaleString();
+  document.getElementById('age-result').style.display='block';
+}
+function calcBMI() {
+  const h = +document.getElementById('bmi-h').value;
+  const w = +document.getElementById('bmi-w').value;
+  if(!h||!w){showToast('Please enter height and weight');return;}
+  const bmi = (w/(h/100)**2).toFixed(1);
+  let cat='',info='';
+  if(bmi<18.5){cat='Underweight';info='Consider consulting a nutritionist to achieve a healthy weight.';}
+  else if(bmi<25){cat='Normal Weight ✅';info='Great! You are within a healthy BMI range. Keep it up!';}
+  else if(bmi<30){cat='Overweight';info='Consider a balanced diet and regular exercise to reach a healthy weight.';}
+  else{cat='Obese';info='Please consult a healthcare professional for personalized guidance.';}
+  document.getElementById('bmi-val').textContent=bmi;
+  document.getElementById('bmi-cat').textContent=cat;
+  document.getElementById('bmi-info').innerHTML=`<strong>Assessment:</strong> ${info}`;
+  document.getElementById('bmi-result').style.display='block';
+}
+function calcPct() {
+  const val = +document.getElementById('pct-val').value;
+  const pct = +document.getElementById('pct-pct').value;
+  if(!val||!pct){showToast('Please enter values');return;}
+  document.getElementById('pct-r1').textContent=(val*pct/100).toFixed(2);
+  document.getElementById('pct-l1').textContent=`${pct}% of ${val}`;
+  document.getElementById('pct-r2').textContent=(val+val*pct/100).toFixed(2);
+  document.getElementById('pct-r3').textContent=(val-val*pct/100).toFixed(2);
+  document.getElementById('pct-result').style.display='block';
+}
+function genUUID() {
+  const count = Math.min(100, Math.max(1, +document.getElementById('uuid-count').value||5));
+  const uuids = [];
+  for(let i=0;i<count;i++){
+    uuids.push('xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>{
+      const r=Math.random()*16|0;return(c==='x'?r:r&0x3|0x8).toString(16);
+    }));
+  }
+  document.getElementById('uuid-output').textContent = uuids.join('\n');
+  document.getElementById('uuid-output').className='tool-output success';
+}
+function genRandom() {
+  const min = +document.getElementById('rn-min').value;
+  const max = +document.getElementById('rn-max').value;
+  const count = Math.min(100, Math.max(1, +document.getElementById('rn-count').value||1));
+  if(min>max){showToast('Min must be less than max');return;}
+  const nums = Array.from({length:count},()=>Math.floor(Math.random()*(max-min+1))+min);
+  document.getElementById('rn-val').textContent = count===1 ? nums[0] : nums.join(', ');
+  document.getElementById('rn-result').style.display='block';
+}
+function genMetaTags() {
+  const title = document.getElementById('mt-title').value;
+  const desc = document.getElementById('mt-desc').value;
+  const kw = document.getElementById('mt-kw').value;
+  const author = document.getElementById('mt-author').value;
+  const url = document.getElementById('mt-url').value;
+  let tags = `<!-- Primary Meta Tags -->\n<title>${title}</title>\n<meta name="title" content="${title}">\n<meta name="description" content="${desc}">\n`;
+  if(kw) tags+=`<meta name="keywords" content="${kw}">\n`;
+  if(author) tags+=`<meta name="author" content="${author}">\n`;
+  if(url) tags+=`<link rel="canonical" href="${url}">\n`;
+  tags+=`\n<!-- Open Graph / Facebook -->\n<meta property="og:type" content="website">\n<meta property="og:title" content="${title}">\n<meta property="og:description" content="${desc}">\n`;
+  if(url) tags+=`<meta property="og:url" content="${url}">\n`;
+  tags+=`\n<!-- Twitter -->\n<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="${title}">\n<meta name="twitter:description" content="${desc}">`;
+  document.getElementById('mt-output').textContent = tags;
+  document.getElementById('mt-output').className='tool-output success';
+}
+function htmlToMd() {
+  let html = document.getElementById('htm-input').value;
+  let md = html
+    .replace(/<h1[^>]*>(.*?)<\/h1>/gi,'# $1\n')
+    .replace(/<h2[^>]*>(.*?)<\/h2>/gi,'## $1\n')
+    .replace(/<h3[^>]*>(.*?)<\/h3>/gi,'### $1\n')
+    .replace(/<strong[^>]*>(.*?)<\/strong>/gi,'**$1**')
+    .replace(/<b[^>]*>(.*?)<\/b>/gi,'**$1**')
+    .replace(/<em[^>]*>(.*?)<\/em>/gi,'*$1*')
+    .replace(/<i[^>]*>(.*?)<\/i>/gi,'*$1*')
+    .replace(/<a[^>]*href="([^"]*)"[^>]*>(.*?)<\/a>/gi,'[$2]($1)')
+    .replace(/<li[^>]*>(.*?)<\/li>/gi,'- $1\n')
+    .replace(/<p[^>]*>(.*?)<\/p>/gi,'$1\n\n')
+    .replace(/<br\s*\/?>/gi,'\n')
+    .replace(/<[^>]+>/g,'')
+    .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&nbsp;/g,' ');
+  document.getElementById('htm-output').textContent = md.trim();
+  document.getElementById('htm-output').className='tool-output success';
+}
+function mdToHtml() {
+  let md = document.getElementById('mth-input').value;
+  let html = md
+    .replace(/^### (.*$)/gim,'<h3>$1</h3>')
+    .replace(/^## (.*$)/gim,'<h2>$1</h2>')
+    .replace(/^# (.*$)/gim,'<h1>$1</h1>')
+    .replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g,'<em>$1</em>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2">$1</a>')
+    .replace(/^- (.*$)/gim,'<li>$1</li>')
+    .replace(/\n\n/g,'</p><p>')
+    .replace(/^(?!<[h|l|p])/gm,'');
+  document.getElementById('mth-output').textContent = `<p>${html}</p>`;
+  document.getElementById('mth-output').className='tool-output success';
+}
+function extractEmails() {
+  const text = document.getElementById('ee-input').value;
+  const emails = text.match(/[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/g) || [];
+  const unique = [...new Set(emails)];
+  if(unique.length===0){document.getElementById('ee-output').textContent='No email addresses found in the text.';return;}
+  document.getElementById('ee-label').innerHTML=`Found <strong>${unique.length}</strong> email(s) <button class="copy-btn" onclick="copyOutput('ee-output')">📋 Copy</button>`;
+  document.getElementById('ee-output').textContent = unique.join('\n');
+  document.getElementById('ee-output').className='tool-output success';
+}
+function testRegex() {
+  const pattern = document.getElementById('rx-pattern').value;
+  const flags = document.getElementById('rx-flags').value;
+  const test = document.getElementById('rx-test').value;
+  try {
+    const rx = new RegExp(pattern, flags);
+    const matches = test.match(rx) || [];
+    document.getElementById('rx-output').textContent = matches.length ? `✅ Found ${matches.length} match(es):\n\n${matches.join('\n')}` : '❌ No matches found.';
+    document.getElementById('rx-output').className='tool-output '+(matches.length?'success':'');
+  } catch(e) {
+    document.getElementById('rx-output').textContent = '❌ Invalid regex: '+e.message;
+  }
+}
+function removeDups() {
+  const lines = document.getElementById('dr-input').value.split('\n');
+  const unique = [...new Set(lines.map(l=>l.trim()).filter(l=>l))];
+  document.getElementById('dr-output').textContent = unique.join('\n')+`\n\n(Removed ${lines.length-unique.length} duplicate(s))`;
+  document.getElementById('dr-output').className='tool-output success';
+}
+function sortLines() {
+  const lines = document.getElementById('dr-input').value.split('\n').filter(l=>l.trim());
+  document.getElementById('dr-output').textContent = lines.sort().join('\n');
+  document.getElementById('dr-output').className='tool-output success';
+}
+function convBinary() {
+  const bin = document.getElementById('bd-input').value.replace(/\s/g,'');
+  if(!/^[01]+$/.test(bin)){showToast('Please enter a valid binary number (0s and 1s only)');return;}
+  const dec = parseInt(bin,2);
+  document.getElementById('bd-dec').textContent=dec;
+  document.getElementById('bd-hex').textContent=dec.toString(16).toUpperCase();
+  document.getElementById('bd-oct').textContent=dec.toString(8);
+  document.getElementById('bd-result').style.display='block';
+}
+function copyOutput(id) {
+  const el = document.getElementById(id);
+  if(!el) return;
+  navigator.clipboard.writeText(el.textContent).then(()=>showToast('Copied to clipboard!')).catch(()=>{
+    const ta = document.createElement('textarea');
+    ta.value=el.textContent;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showToast('Copied!');
+  });
+}
+
+// ============================================================
+// RENDER
+// ============================================================
+function renderFeatured() {
+  const featured = TOOLS.filter(t=>t.popular);
+  document.getElementById('featuredGrid').innerHTML = featured.map(t=>`
+    <div class="featured-card" onclick="openTool('${t.id}')">
+      <div class="featured-icon" style="background:${t.bg}">${toolIcon(t.icon,t.color)}</div>
+      <div class="featured-info">
+        <div class="tool-name">${t.name}</div>
+        <div class="tool-desc">${t.desc}</div>
+        <div class="tool-btn" style="color:${t.color}">Open Tool →</div>
+      </div>
+    </div>`).join('');
+}
+
+function renderBigCats() {
+  document.getElementById('bigCats').innerHTML = Object.entries(CAT_META).map(([key,meta])=>{
+    const count = TOOLS.filter(t=>t.cat===key).length;
+    return `<div class="big-cat" onclick="filterCat('${key}')">
+      <div class="big-cat-icon">${toolIcon(meta.icon,meta.color)}</div>
+      <div class="big-cat-name">${meta.name}</div>
+      <div class="big-cat-count">${count} tools</div>
+    </div>`;
+  }).join('');
+}
+
+function renderCatSections() {
+  const el = document.getElementById('allCatSections');
+  el.innerHTML = Object.entries(CAT_META).map(([key,meta])=>{
+    const catTools = TOOLS.filter(t=>t.cat===key).slice(0,6);
+    const cards = catTools.map(t=>`
+      <div class="tool-card" style="--card-accent:${t.color};--card-bg:${t.bg};--card-color:${t.color}" onclick="openTool('${t.id}')">
+        <div class="tool-icon" style="background:${t.bg}">${toolIcon(t.icon,t.color)}</div>
+        <div class="tool-name">${t.name}</div>
+        <div class="tool-desc">${t.desc}</div>
+        <div class="tool-btn">Open Tool →</div>
+      </div>`).join('');
+    return `<div class="cat-section fade-in">
+      <div class="cat-section-header">
+        <div class="cat-section-title">
+          <div class="cat-section-icon" style="background:${meta.color}20;color:${meta.color}">${toolIcon(meta.icon,meta.color)}</div>
+          ${meta.name}
+        </div>
+        <a class="view-all" href="#" onclick="filterCat('${key}')">View all ${TOOLS.filter(t=>t.cat===key).length} tools →</a>
+      </div>
+      <div class="tools-grid">${cards}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderAllToolsGrid(filterKey='all') {
+  const filtered = filterKey==='all' ? TOOLS : TOOLS.filter(t=>t.cat===filterKey);
+  document.getElementById('allToolsGrid').innerHTML = filtered.map(t=>`
+    <div class="tool-card" style="--card-accent:${t.color};--card-bg:${t.bg};--card-color:${t.color}" onclick="openTool('${t.id}')">
+      <div class="tool-icon" style="background:${t.bg}">${toolIcon(t.icon,t.color)}</div>
+      <div class="tool-name">${t.name}${t.popular?'<span class="popular-badge">Popular</span>':''}</div>
+      <div class="tool-desc">${t.desc}</div>
+      <div class="tool-btn">Open Tool →</div>
+    </div>`).join('');
+}
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const pg = document.getElementById('page-'+name);
+  if(pg) pg.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(name==='all-tools') renderAllToolsGrid();
+  closeMobileNav();
+}
+
+function openTool(id) {
+  const tool = TOOLS.find(t=>t.id===id);
+  if(!tool) return;
+  document.getElementById('toolPageContent').innerHTML = getToolPageHTML(tool);
+  showPage('tool');
+  // Init password generator
+  if(id==='password-generator') setTimeout(genPassword,100);
+}
+
+function filterCat(cat) {
+  showPage('all-tools');
+  setTimeout(()=>{
+    renderAllToolsGrid(cat==='all'?'all':cat);
+    // Update active chip
+    document.querySelectorAll('#page-all-tools .cat-chip').forEach(c=>{
+      c.classList.toggle('active', c.textContent.toLowerCase().includes(cat)||cat==='all'&&c.textContent.toLowerCase().includes('all'));
+    });
+  },50);
+}
+
+function filterAllPage(cat,el) {
+  document.querySelectorAll('#page-all-tools .cat-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  renderAllToolsGrid(cat);
+}
+
+// ============================================================
+// SEARCH
+// ============================================================
+function openSearch() {
+  document.getElementById('searchOverlay').classList.add('open');
+  setTimeout(()=>document.getElementById('searchInput').focus(),100);
+  doSearch('');
+}
+function closeSearch() {
+  document.getElementById('searchOverlay').classList.remove('open');
+  document.getElementById('searchInput').value='';
+}
+function closeSearchIfOutside(e) {
+  if(e.target===document.getElementById('searchOverlay')) closeSearch();
+}
+function doSearch(q) {
+  const results = document.getElementById('searchResults');
+  q = q.toLowerCase().trim();
+  const filtered = q ? TOOLS.filter(t=>t.name.toLowerCase().includes(q)||t.desc.toLowerCase().includes(q)||t.cat.includes(q)) : TOOLS.slice(0,12);
+  if(!filtered.length){
+    results.innerHTML='<div class="search-empty">🔍 No tools found for "'+q+'"</div>';return;
+  }
+  results.innerHTML = filtered.map(t=>`
+    <div class="search-result-item" onclick="closeSearch();openTool('${t.id}')">
+      <div class="search-result-icon" style="background:${t.bg};width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center">${toolIcon(t.icon,t.color)}</div>
+      <div class="search-result-info">
+        <div class="search-result-name">${t.name}</div>
+        <div class="search-result-cat">${CAT_META[t.cat].name}</div>
+      </div>
+      <span style="font-size:.8rem;color:var(--text3)">→</span>
+    </div>`).join('');
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();});
+
+// ============================================================
+// DARK MODE
+// ============================================================
+function toggleDark() {
+  const isDark = document.documentElement.getAttribute('data-theme')==='dark';
+  document.documentElement.setAttribute('data-theme',isDark?'light':'dark');
+  document.querySelector('.dark-toggle').textContent=isDark?'🌙':'☀️';
+  localStorage.setItem('ath-theme',isDark?'light':'dark');
+}
+(function(){
+  const t=localStorage.getItem('ath-theme');
+  if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');document.querySelector('.dark-toggle').textContent='☀️';}
+})();
+
+// ============================================================
+// MOBILE NAV
+// ============================================================
+function toggleMobileNav() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+function closeMobileNav() {
+  document.getElementById('mobileNav').classList.remove('open');
+}
+
+// ============================================================
+// TOAST
+// ============================================================
+function showToast(msg) {
+  const existing = document.querySelector('.toast');
+  if(existing){existing.remove();}
+  const t=document.createElement('div');
+  t.className='toast';t.textContent=msg;
+  document.body.appendChild(t);
+  setTimeout(()=>{t.classList.add('hide');setTimeout(()=>t.remove(),300)},2500);
+}
+
+// ============================================================
+// SCROLL ANIMATION
+// ============================================================
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.1});
+function observeAll(){document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));}
+
+// ============================================================
+// INIT
+// ============================================================
+document.addEventListener('DOMContentLoaded',()=>{
+  renderFeatured();
+  renderBigCats();
+  renderCatSections();
+  renderAllToolsGrid();
+  observeAll();
+  setTimeout(observeAll,500);
+});
+</script>
+</body>
+</html>
