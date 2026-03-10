@@ -256,7 +256,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 24p
 
 /* MOBILE NAV */
 .menu-btn{display:none;background:var(--bg3);border:1px solid var(--border);width:36px;height:36px;border-radius:var(--radius-sm);align-items:center;justify-content:center;font-size:1.2rem;color:var(--text)}
-.mobile-nav{display:none;position:fixed;inset:0;top:64px;background:var(--bg2);z-index:999;padding:20px 24px;flex-direction:column;gap:4px;border-top:1px solid var(--border);overflow-y:auto}
+.mobile-nav{display:none;position:fixed;left:0;right:0;top:64px;bottom:0;background:var(--bg2);z-index:1001;padding:16px;flex-direction:column;gap:4px;border-top:1px solid var(--border);overflow-y:auto;-webkit-overflow-scrolling:touch}
 .mobile-nav.open{display:flex}
 .mobile-nav a{padding:14px 16px;border-radius:var(--radius-sm);font-weight:500;color:var(--text2);font-size:.95rem;transition:all .2s;min-height:48px;display:flex;align-items:center;gap:10px}
 .mobile-nav a:hover,.mobile-nav a:active{background:var(--bg3);color:var(--accent)}
@@ -501,15 +501,15 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 
 <!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
-  <a href="#" onclick="showPage('home');toggleMobileNav()">🏠 Home</a>
-  <a href="#" onclick="showPage('all-tools');toggleMobileNav()">🔧 All Tools</a>
-  <a href="#" onclick="filterCat('image');toggleMobileNav()">🖼️ Image Tools</a>
-  <a href="#" onclick="filterCat('pdf');toggleMobileNav()">📄 PDF Tools</a>
-  <a href="#" onclick="filterCat('seo');toggleMobileNav()">🔍 SEO Tools</a>
-  <a href="#" onclick="filterCat('developer');toggleMobileNav()">💻 Developer Tools</a>
-  <a href="#" onclick="filterCat('calculator');toggleMobileNav()">📊 Calculator Tools</a>
-  <a href="#" onclick="showPage('login');toggleMobileNav()">🔑 Login</a>
-  <a href="#" onclick="showPage('signup');toggleMobileNav()">✨ Sign Up</a>
+  <a href="javascript:void(0)" onclick="showPage('home');closeMobileNav()">🏠 Home</a>
+  <a href="javascript:void(0)" onclick="showPage('all-tools');closeMobileNav()">🔧 All Tools</a>
+  <a href="javascript:void(0)" onclick="filterCat('image');closeMobileNav()">🖼️ Image Tools</a>
+  <a href="javascript:void(0)" onclick="filterCat('pdf');closeMobileNav()">📄 PDF Tools</a>
+  <a href="javascript:void(0)" onclick="filterCat('seo');closeMobileNav()">🔍 SEO Tools</a>
+  <a href="javascript:void(0)" onclick="filterCat('developer');closeMobileNav()">💻 Developer Tools</a>
+  <a href="javascript:void(0)" onclick="filterCat('calculator');closeMobileNav()">📊 Calculator Tools</a>
+  <a href="javascript:void(0)" onclick="showPage('login');closeMobileNav()">🔑 Login</a>
+  <a href="javascript:void(0)" onclick="showPage('signup');closeMobileNav()">✨ Sign Up</a>
 </div>
 
 <!-- SEARCH OVERLAY -->
@@ -689,7 +689,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
       <div class="footer-col">
         <h4>Top Tools</h4>
         <a href="#" onclick="openTool('image-compressor')">Image Compressor</a>
-        <a href="pdf-to-word.html" onclick="openTool('pdf-to-word')">PDF to Word</a>
+        <a href="#" onclick="openTool('pdf-to-word')">PDF to Word</a>
         <a href="#" onclick="openTool('word-counter')">Word Counter</a>
         <a href="#" onclick="openTool('qr-code-generator')">QR Code Generator</a>
         <a href="#" onclick="openTool('password-generator')">Password Generator</a>
